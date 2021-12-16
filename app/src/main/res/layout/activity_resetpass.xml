@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".LogIn">
+
+
+    <ImageView
+        android:id="@+id/SETlog"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="100sp"
+        android:layout_marginTop="50sp"
+        android:src="@drawable/police" />
+
+    <EditText
+        android:layout_width="191dp"
+        android:layout_height="59dp"
+        android:id="@+id/SETPASS"
+        android:layout_below="@+id/SETlog"
+        android:layout_marginStart="200sp"
+        android:hint="Password"
+        android:layout_marginTop="30sp" />
+
+    <TextView
+        android:id="@+id/SETPASSW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SETlog"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="53dp"
+        android:text="Password"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/SETpassRE"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SETPASS"
+        android:hint="Re-Enter password"
+        android:layout_marginStart="200sp"
+        android:layout_marginTop="28dp" />
+
+    <TextView
+        android:id="@+id/SETPASSWORD"
+        android:layout_width="142dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/SETPASSW"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:text="Re-pass"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/SETenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SETPASSWORD"
+        android:layout_marginTop="113dp"
+        android:textSize="20sp"
+        android:layout_marginStart="150sp"
+        android:text="Finished" />
+
+
+
+</RelativeLayout>

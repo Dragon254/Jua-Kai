@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".LogIn">
+
+
+    <ImageView
+        android:id="@+id/codelog"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="100sp"
+        android:layout_marginTop="50sp"
+        android:src="@drawable/police" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/codelog"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_marginTop="25dp"
+        android:layout_centerInParent="true"
+        android:text="Code Confirmation"/>
+
+    <EditText
+        android:layout_width="191dp"
+        android:layout_height="59dp"
+        android:id="@+id/user"
+        android:layout_below="@+id/codelog"
+        android:layout_marginStart="200sp"
+        android:hint="Code"
+        android:layout_marginTop="100sp" />
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/codelog"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="113dp"
+        android:text="Code"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/codeenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="113dp"
+        android:textSize="20sp"
+        android:layout_marginStart="150sp"
+        android:text="Proceed" />
+
+
+
+</RelativeLayout>

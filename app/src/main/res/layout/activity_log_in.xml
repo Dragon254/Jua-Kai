@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".LogIn">
+
+
+    <ImageView
+        android:id="@+id/log"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="100sp"
+        android:layout_marginTop="50sp"
+        android:src="@drawable/police" />
+
+    <EditText
+        android:layout_width="191dp"
+        android:layout_height="59dp"
+        android:id="@+id/user"
+        android:layout_below="@+id/log"
+        android:layout_marginStart="200sp"
+        android:hint="Enter the Username"
+        android:layout_marginTop="30sp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/log"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="53dp"
+        android:text="UserName"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user"
+        android:hint="Enter the passcode"
+        android:layout_marginStart="200sp"
+        android:layout_marginTop="28dp" />
+
+    <TextView
+        android:id="@+id/code"
+        android:layout_width="142dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/name"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:text="PassCode"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/code"
+        android:layout_marginTop="113dp"
+        android:textSize="20sp"
+        android:layout_marginStart="150sp"
+        android:text="Enter" />
+
+    <TextView
+        android:id="@+id/forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/code"
+        android:layout_marginTop="207dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="forget passcode??" />
+
+    <TextView
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter"
+        android:layout_alignStart="@+id/forget"
+        android:layout_marginStart="193dp"
+        android:layout_marginTop="43dp"
+        android:text="Reset"
+        android:id="@+id/reset"
+        android:textStyle="bold"
+        android:textColor="@color/purple_500"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="New Member?"
+        android:id="@+id/member"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/forget"/>
+
+
+
+</RelativeLayout>
